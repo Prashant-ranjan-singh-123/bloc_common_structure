@@ -1,5 +1,5 @@
-import 'package:my_lpg_book/services/shared_pref/shared_pref_variable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'shared_pref_variable.dart';
 
 class SharedPreferenceLogic{
   static Future<bool> isLogIn() async {

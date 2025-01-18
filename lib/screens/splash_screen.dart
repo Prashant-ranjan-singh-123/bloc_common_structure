@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:my_lpg_book/utils/app_assets.dart';
+import '../utils/app_assets.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   void change_page({required BuildContext context}) {
-    Future.delayed(Duration(seconds: 2)).then((_) {
+    Future.delayed(const Duration(seconds: 2)).then((_) {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (context) => SizedBox()));
+          .pushReplacement(MaterialPageRoute(builder: (context) => const SizedBox()));
     });
   }
 

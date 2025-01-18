@@ -5,7 +5,7 @@ class MyAppCircularProgressIndicator extends StatelessWidget {
   Color ProgressIndicatorColor;
 
   MyAppCircularProgressIndicator(
-      {this.ProgressIndicatorColor = Colors.black});
+      {super.key, this.ProgressIndicatorColor = Colors.black});
 
   @override
   Widget build(BuildContext context) {

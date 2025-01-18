@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_lpg_book/screens/splash_screen.dart';
-import 'package:my_lpg_book/utils/app_color.dart';
+import 'screens/splash_screen.dart';
+import 'utils/app_color.dart';
 
 void main(){
   runApp(const MyApp());

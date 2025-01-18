@@ -33,7 +33,7 @@ class AppDialogs {
                       }
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'OK',
                       style: TextStyle(color: Colors.black),
                     ))
@@ -63,7 +63,7 @@ class AppDialogs {
                       }
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'Cancel',
                       style: TextStyle(color: Colors.black),
                     )),
@@ -74,7 +74,7 @@ class AppDialogs {
                       }
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'OK',
                       style: TextStyle(color: Colors.black),
                     ))

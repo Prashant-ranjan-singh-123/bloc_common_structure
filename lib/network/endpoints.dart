@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:my_lpg_book/network/dio_client.dart';
+import 'dio_client.dart';
 
 class MyAppEndpoints {
   MyAppEndpoints._();

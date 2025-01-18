@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../reusable/progress_indicator.dart';
-import '../../screens/before_login/login/login_screen.dart';
-import '../../utils/app_color.dart';
 import 'login_check_cubit.dart';
 import 'login_check_state.dart';
 
@@ -54,15 +52,15 @@ class _LoginCheckScreenState extends State<LoginCheckScreen> {
 
   Widget _error_page({required String errorMessage}) {
     return Center(
-      child: Text('Error Occur: ${errorMessage}'),
+      child: Text('Error Occur: $errorMessage'),
     );
   }
 
   Widget _token_found() {
-    return SizedBox();
+    return const SizedBox();
   }
 
   Widget _token_not_found() {
-    return SizedBox();
+    return const SizedBox();
   }
 }

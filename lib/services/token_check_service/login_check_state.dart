@@ -6,12 +6,12 @@ class LoginCheckState extends Equatable {
   bool? isTokenPresent;
 
   LoginCheckState(
-      {this.loading = true, this.error = null, this.isTokenPresent = null});
+      {this.loading = true, this.error, this.isTokenPresent});
 
   LoginCheckState copyWith({
     bool? loading = true,
-    String? error = null,
-    bool? isTokenPresent = null,
+    String? error,
+    bool? isTokenPresent,
   }) {
     return LoginCheckState(
         loading: loading ?? this.loading,
