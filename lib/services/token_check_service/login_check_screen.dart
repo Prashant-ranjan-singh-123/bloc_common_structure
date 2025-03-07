@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../reusable/my_scaffold_widget.dart';
 import '../../reusable/progress_indicator.dart';
+import '../../screens/before_login/login/login_screen.dart';
+import '../../screens/before_login/sign_up/sign_up_screen.dart';
 import 'login_check_cubit.dart';
 import 'login_check_state.dart';
 
@@ -26,10 +29,12 @@ class _LoginCheckScreenState extends State<LoginCheckScreen> {
     final loading =
         context.select((LoginCheckCubit cubit) => cubit.state.loading);
 
-    return Scaffold(body: BlocBuilder<LoginCheckCubit, LoginCheckState>(
-        builder: (context, LoginCheckState) {
-      return _build_ui(state: LoginCheckState);
-    }));
+    return MyScaffold(
+      child: Scaffold(body: BlocBuilder<LoginCheckCubit, LoginCheckState>(
+          builder: (context, LoginCheckState) {
+        return _build_ui(state: LoginCheckState);
+      })),
+    );
   }
 
   Widget _build_ui({required LoginCheckState state}) {
@@ -57,10 +62,10 @@ class _LoginCheckScreenState extends State<LoginCheckScreen> {
   }
 
   Widget _token_found() {
-    return const SizedBox();
+    return LoginScreen();
   }
 
   Widget _token_not_found() {
-    return const SizedBox();
+    return SignUpScreen();
   }
 }
