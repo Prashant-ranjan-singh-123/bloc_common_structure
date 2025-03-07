@@ -26,6 +26,13 @@ class _LoginScreenState extends State<LoginScreen> {
     _password = TextEditingController();
     super.initState();
   }
+  
+  @override
+  void dispose() {
+    _email.dispose();
+    _password.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
