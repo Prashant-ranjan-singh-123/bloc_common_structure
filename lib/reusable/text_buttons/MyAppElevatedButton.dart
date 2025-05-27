@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_lpg_book/reusable/progress_indicator.dart';
+
+import '../progress_indicator.dart';
 
 class Myappelevatedbutton extends StatefulWidget {
   String text;
